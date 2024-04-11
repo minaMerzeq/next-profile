@@ -13,7 +13,7 @@ const Body: React.FC<BodyProps> = () => {
   const favIconTwo: string = require("../Assists/image copy 15.png");
 
   return (
-    <div className="w-full md:w-2/3 rounded-lg p-4 flex flex-col gap-10 shadow-xl bg-white">
+    <div className="w-full lg:w-2/3 rounded-lg p-4 flex flex-col gap-10 shadow-xl bg-white">
       <div className="flex justify-between">
         <div>
           <Button

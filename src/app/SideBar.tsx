@@ -4,7 +4,7 @@ import SideBarTwo from "./SideBarTwo";
 
 function SideBar(): JSX.Element {
   return (
-    <div className="h-full w-full md:w-1/3 flex flex-col gap-5">
+    <div className="h-full w-full lg:w-1/3 flex flex-col gap-5">
       <SideBarOne />
       <SideBarTwo />
     </div>

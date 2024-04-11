@@ -21,14 +21,33 @@ export default function Header(): JSX.Element {
   return (
     <div className="flex justify-between px-14 w-full bg-white shadow-lg">
       <div className="flex justify-center items-stretch mt-4">
+      <div className="lg:hidden mt-2">
+        <button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </div>
+        <p className="mr-3">
+          <Image width={100} height={20} alt="layer1" src={Layer1} />
+        </p>
         <Tabs
           value={value}
           onChange={handleChange}
           aria-label="secondary tabs example"
+          className="hidden lg:flex"
         >
-          <p className="mr-3">
-            <Image width={100} height={20} alt="layer1" src={Layer1} />
-          </p>
           <Tab value="Home" label="Home" />
           <Tab value="Blog" label="Blog" />
           <Tab value="Gifts" label="Gifts" />
@@ -54,7 +73,7 @@ export default function Header(): JSX.Element {
         <p className="p-4">
           <Image alt="ellipse" src={Ellipse} />
         </p>
-        <p>
+        <p className="hidden lg:flex">
           <Button
             variant="contained"
             sx={{
@@ -71,7 +90,7 @@ export default function Header(): JSX.Element {
             Add New Product
           </Button>{" "}
         </p>
-        <div className="flex justify-center items-center">
+        <div className="justify-center items-center hidden lg:flex">
           <p
             className="p-4"
             style={{

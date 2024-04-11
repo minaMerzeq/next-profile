@@ -1,5 +1,6 @@
 import Header from "./Header";
 import SideBar from "./SideBar";
+import Body from "./Body";
 
 export default function Home(): JSX.Element {
   return (
@@ -10,9 +11,9 @@ export default function Home(): JSX.Element {
       }}
     >
       <Header />
-      <div className="flex md:flex-row flex-col mx-16 gap-5 h-5/6">
+      <div className="flex md:flex-row flex-col mx-5 md:mx-16 gap-5 h-5/6">
         <SideBar />
-        {/* <Body /> */}
+        <Body />
       </div>
     </div>
   );
